@@ -129,8 +129,8 @@ body {
   padding-bottom: 8rem;
 }
 
-.info .alamat {
-  font-size: 1.1rem;
+.info .profile img {
+  width: 50%;
 }
 
 .info .description {
