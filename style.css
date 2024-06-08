@@ -129,6 +129,13 @@ body {
   padding-bottom: 8rem;
 }
 
+.info h3 {
+  color: var(--pink);
+  font-family: "Sacramento";
+  font-size: 3rem;
+  font-weight: bold;
+}
+
 .info .description {
   font-size: 1rem;
   font-weight: 300;
@@ -140,30 +147,33 @@ body {
   border: 1px solid #999;
 }
 
-.info .card-header {
-  border-bottom: 1px solid #999;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-}
-
-.info .card-body {
-  font-size: 1rem;
-}
-
-.info .card-footer {
-  border-bottom: 1px solid #999;
-  font-size: 0.9rem;
-  font-weight: 300;
-}
-
 .container {
   width: 60%;
   text-align: center;
 }
 
+.video-wrapper {
+  position: relative;
+  padding-bottom: 80%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
 video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: fit-content;
+  height: 100%;
+}
+
+.video-description {
+  position: relative;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #ffffff;
 }
 
 .story {
