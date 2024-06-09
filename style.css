@@ -282,6 +282,10 @@ video {
   float: right;
 }
 
+#musik {
+  display: none;
+}
+
 .timeline li.timeline-inverted .timeline-panel::before {
   border-left-width: 0;
   border-right-width: 15px;
