@@ -108,6 +108,12 @@ body {
   color: #666;
 }
 
+.texthome {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: justify;
+}
+
 .home .profile {
   margin-top: 100px;
 }
@@ -136,8 +142,8 @@ body {
   font-weight: bold;
 }
 
-.info .description {
-  font-size: 1rem;
+.info h4 {
+  font-size: large;
   font-weight: 300;
 }
 
@@ -150,30 +156,28 @@ body {
 .container {
   width: 60%;
   text-align: center;
+  font-weight: 250;
 }
 
-.video-wrapper {
-  position: relative;
-  padding-bottom: 60%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  background: #000;
+.longtext {
+  font-size: 1.1rem;
+  color: #ffffff;
+  width: 100%; /* Make the text span the full width of its container */
+  max-width: 800px; /* Optional: Set a max-width for readability */
+  text-align: justify; /* Justify the text for a cleaner look */
+  line-height: 1.6; /* Increase line-height for better readability */
 }
 
 video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  width: 70%; /* Adjust the width as needed, e.g., 80%, 50%, 400px, etc. */
+  height: auto; /* This ensures the aspect ratio is maintained */
+  max-width: 800px; /* Optional: Set a max-width to prevent the video from being too large */
+  max-height: 450px; /* Optional: Set a max-height to limit the height */
 }
 
-.video-description {
-  position: relative;
-  margin-top: 15px;
-  font-size: 18px;
-  color: #ffffff;
+.kotak {
+  text-align: center;
+  padding-top: 10px;
 }
 
 .story {
