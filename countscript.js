@@ -33,6 +33,6 @@ const countdownInterval = setInterval(() => {
 
 proceedButton.addEventListener("click", () => {
   if (!proceedButton.disabled) {
-    alert("YOU GOT IT BABY!😘"), (onclick = "enableScroll()");
+    alert("YOU GOT IT BABY!😘");
   }
 });

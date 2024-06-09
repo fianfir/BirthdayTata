@@ -13,6 +13,13 @@
     href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
 
+  <!-- simplyCountdownd -->
+  <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+  <script src="countdown/simplyCountdown.min.js"></script>
+  <!-- Akhir simplyCountdownd -->
+
+
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -32,6 +39,9 @@
       <h4>For My BeautyGirl❤</h4>
       <h1>Juvita Kirana</h1>
       <p>Are you ready for today?</p>
+      <!-- <div class="simply-countdown"></div>
+      <a href="#undangan" class="btn btn-lg mt-4" onclick="enableScroll()">Sebelum dipencet, baca bismillah dulu ya
+        sayang😊</a> -->
 
       <div class="container">
         <div id="countdown">
@@ -40,8 +50,9 @@
           <span id="minutes"></span> Menit
           <span id="seconds"></span> Detik
         </div>
-        <button id="proceedButton" class="button" onclick="enableScroll()" disabled>Sebelum
-          dipencet, baca bismillah dulu yaa sayang😊</button>
+        <button id="proceedButton" class="button" disabled onclick="enableScroll()">Sebelum dipencet, baca bismillah
+          dulu ya
+          sayang😊</button>
       </div>
       <script src="countscript.js"></script>
 
@@ -329,6 +340,64 @@
       </div>
     </div>
   </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    simplyCountdown(".simply-countdown", {
+      year: 2024, // required
+      month: 6, // required
+      day: 24, // required
+      hours: 0, // Default is 0 [0-23] integer
+      words: {
+        //words displayed into the countdown
+        days: { singular: "hari", plural: "hari" },
+        hours: { singular: "jam", plural: "jam" },
+        minutes: { singular: "menit", plural: "menit" },
+        seconds: { singular: "detik", plural: "detik" },
+      },
+    });
+  </script>
+
+  <script>
+    const stickyTop = document.querySelector(".sticky-top");
+    const offcanvas = document.querySelector(".offcanvas");
+
+    offcanvas.addEventListener("show.bs.offcanvas", function () {
+      stickyTop.style.overflow = "visible";
+    });
+
+    offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+      stickyTop.style.overflow = "hidden";
+    });
+  </script>
+
+  <script>
+    const rootElement = document.querySelector(":root");
+
+    function disableScroll() {
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+      window.onscroll = function () {
+        window.scrollTo(scrollTop, scrollLeft);
+      };
+
+      rootElement.style.scrollBehavior = "auto";
+    }
+
+    function enableScroll() {
+      window.onscroll = function () { };
+      rootElement.style.scrollBehavior = "smooth";
+      localStorage.setItem("opened", "true");
+    }
+
+    if (!localStorage.getItem("opened")) {
+      disableScroll();
+    }
+    disableScroll();
+  </script>
 </body>
 
 </html>
