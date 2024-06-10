@@ -1,4 +1,4 @@
-const targetDate = new Date("June 24, 2024 00:00:00").getTime();
+const targetDate = new Date("June 1, 2024 00:00:00").getTime();
 const countdownElement = document.getElementById("countdown");
 const daysElement = document.getElementById("days");
 const hoursElement = document.getElementById("hours");

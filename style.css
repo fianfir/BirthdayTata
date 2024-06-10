@@ -44,6 +44,19 @@ body {
   font-size: 1.6rem;
 }
 
+.h6 {
+  color: white;
+  border-radius: 15px;
+}
+.h7 {
+  background-color: #ffffff;
+  color: var(--pink);
+  box-shadow: var(--shadow);
+  border-radius: 15px;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
 .hero p {
   font-size: 1.4rem;
 }
